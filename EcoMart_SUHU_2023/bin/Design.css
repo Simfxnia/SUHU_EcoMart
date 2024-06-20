@@ -1,0 +1,51 @@
+.menuButtonColor {
+    -fx-background-color: #ffffff;
+}
+
+.greenColor {
+    -fx-background-color: #049372;
+    -fx-background-radius: 15;
+}
+
+.greybuttonColor {
+    -fx-background-color: #d9d9d9;
+    -fx-background-radius: 15;
+}
+
+.transparantColor {
+    -fx-background-color: #ffffff00;
+}
+
+.tealColor {
+    -fx-background-color: #07c79b;
+    -fx-background-radius: 15;
+}
+
+.borderButton {
+    -fx-background-color: #ffffff00;
+    -fx-border-radius: 15;
+    -fx-border-color: #049372;
+    -fx-border-width: 3;
+    -fx-text-fill: #049372;
+}
+
+.loginTextField {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+}
+
+.whiteColor {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15;
+}
+
+.textGreen {
+    -fx-text-fill: #049372;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15;
+}
+
+.textWhite {
+    -fx-text-fill: #ffffff;
+}

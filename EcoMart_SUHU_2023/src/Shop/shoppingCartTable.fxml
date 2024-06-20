@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cntrPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="whiteColor" stylesheets="@../Design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.ShoppingCartTableCotroller">
+   <children>
+      <AnchorPane layoutX="50.0" prefHeight="800.0" prefWidth="1350.0">
+         <children>
+            <TableView fx:id="tvdelivery" layoutX="50.0" layoutY="205.0" prefHeight="216.0" prefWidth="1143.0">
+              <columns>
+                <TableColumn fx:id="tcName" prefWidth="184.0" text="Name" />
+                <TableColumn fx:id="tcbricks600" minWidth="0.0" prefWidth="79.20001220703125" text="600ml Bricks" />
+                  <TableColumn fx:id="tcprice600" prefWidth="99.99996948242188" text="Price" />
+                  <TableColumn fx:id="tcbricks1000" prefWidth="83.20001220703125" text="1000ml Bricks" />
+                  <TableColumn fx:id="tcprice1000" prefWidth="107.20001220703125" text="Price" />
+                  <TableColumn fx:id="tctotalprice" prefWidth="104.0" text="Total" />
+                  <TableColumn fx:id="tcpaymet" prefWidth="95.20001220703125" text="Pay Method" />
+                  <TableColumn fx:id="tcAddress" prefWidth="384.0" text="Address" />
+              </columns>
+            </TableView>
+            <Label layoutX="48.0" layoutY="56.0" text="Shop">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Button layoutX="50.0" layoutY="445.0" mnemonicParsing="false" onAction="#editButton" prefHeight="29.0" prefWidth="135.0" styleClass="greenColor" stylesheets="@../Design.css" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="name" layoutX="50.0" layoutY="505.0" prefHeight="50.0" prefWidth="365.0" promptText="Name" styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="439.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="365.0" styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <children>
+                  <Label fx:id="amount600" alignment="CENTER" layoutX="256.0" layoutY="9.0" prefHeight="26.0" prefWidth="59.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="5.0" prefHeight="40.0" prefWidth="165.0" text="600ml Bottle">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="-21.0" prefWidth="17.0" text="_">
+                     <font>
+                        <Font name="System Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="320.0" layoutY="-6.0" prefHeight="56.0" prefWidth="32.0" text="+">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="312.0" layoutY="5.0" mnemonicParsing="false" onAction="#add600Button" prefHeight="40.0" prefWidth="42.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="217.0" layoutY="9.0" mnemonicParsing="false" onAction="#substract600Button" prefHeight="32.0" prefWidth="42.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="48.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../ImageIcon/arrowRightIcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="28.0" layoutY="118.0" mnemonicParsing="false" onAction="#goBackButton" prefHeight="58.0" prefWidth="64.0" styleClass="transparantColor" stylesheets="@../Design.css" />
+            <Button layoutX="564.0" layoutY="445.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="29.0" prefWidth="135.0" styleClass="greenColor" stylesheets="@../Design.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="1056.0" layoutY="445.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="29.0" prefWidth="135.0" styleClass="greenColor" stylesheets="@../Design.css" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="address" layoutX="50.0" layoutY="580.0" prefHeight="50.0" prefWidth="754.0" promptText="Address" styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="825.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="365.0" styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <children>
+                  <Label fx:id="amount1000" alignment="CENTER" layoutX="256.0" layoutY="9.0" prefHeight="26.0" prefWidth="59.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="14.0" layoutY="5.0" prefHeight="40.0" prefWidth="165.0" text="1000ml Bottle">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="-21.0" prefWidth="17.0" text="_">
+                     <font>
+                        <Font name="System Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="320.0" layoutY="-6.0" prefHeight="56.0" prefWidth="32.0" text="+">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="312.0" layoutY="5.0" mnemonicParsing="false" onAction="#add1000Button" prefHeight="40.0" prefWidth="42.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="217.0" layoutY="9.0" mnemonicParsing="false" onAction="#substract1000Button" prefHeight="32.0" prefWidth="42.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ChoiceBox fx:id="paymet" layoutX="825.0" layoutY="580.0" prefHeight="50.0" prefWidth="365.0" styleClass="greybuttonColor" stylesheets="@../Design.css" />
+            <Button layoutX="94.0" layoutY="120.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="233.0" styleClass="borderButton" stylesheets="@../Design.css" text="Pending Cart List" textFill="#049372">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="468.0" layoutY="665.0" mnemonicParsing="false" onAction="#checkoutAllButton" prefHeight="70.0" prefWidth="326.0" styleClass="tealColor" stylesheets="@../Design.css" text="Checkout All" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+            <Label layoutX="360.0" layoutY="124.0" prefHeight="50.0" prefWidth="608.0" text="Go back and add another cart   or   Checkout and notify warehouse" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

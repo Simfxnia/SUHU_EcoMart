@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cntrPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserProfile.AccountCardController">
+   <children>
+      <AnchorPane layoutX="50.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1350.0">
+         <children>
+            <Label layoutX="48.0" layoutY="56.0" prefHeight="58.0" prefWidth="202.0" text="Account">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="48.0" layoutY="200.0" prefHeight="60.0" prefWidth="510.0" promptText="Full Name" styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <font>
+                  <Font name="HP Simplified Hans Regular" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="accNo" layoutX="48.0" layoutY="285.0" prefHeight="60.0" prefWidth="510.0" promptText="Account No." styleClass="greybuttonColor" stylesheets="@../Design.css">
+               <font>
+                  <Font name="HP Simplified Hans Regular" size="20.0" />
+               </font>
+            </TextField>
+            <Button layoutX="407.0" layoutY="655.0" mnemonicParsing="false" onAction="#addButton" prefHeight="70.0" prefWidth="400.0" styleClass="tealColor" stylesheets="@../Design.css" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="debitcreditbox" layoutX="48.0" layoutY="370.0" prefHeight="60.0" prefWidth="510.0" styleClass="greybuttonColor" stylesheets="@../Design.css" />
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="48.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../ImageIcon/arrowRightIcon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="39.0" layoutY="125.0" mnemonicParsing="false" onAction="#goBackButton" prefHeight="46.0" prefWidth="52.0" styleClass="transparantColor" stylesheets="@../Design.css" text="Button" textFill="TRANSPARENT" />
+            <Button layoutX="94.0" layoutY="120.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="314.0" styleClass="borderButton" stylesheets="@../Design.css" text="Add Credit/Debit Card" textFill="#049372">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="add" layoutX="48.0" layoutY="464.0" prefHeight="27.0" prefWidth="694.0" textFill="#00733f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="warning" layoutX="48.0" layoutY="464.0" prefHeight="27.0" prefWidth="694.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

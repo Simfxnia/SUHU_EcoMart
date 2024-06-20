@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cntrPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.Shop600mlController">
+   <children>
+      <AnchorPane layoutX="50.0" prefHeight="800.0" prefWidth="1350.0">
+         <children>
+            <Label layoutX="48.0" layoutY="56.0" prefHeight="58.0" prefWidth="166.0" text="Shop">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="386.0" fitWidth="399.0" layoutX="100.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/1000mlBottles.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="725.0" layoutY="306.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="262.0" styleClass="greenColor" stylesheets="@../Design.css">
+               <children>
+                  <Label fx:id="amount" alignment="CENTER" layoutX="90.0" layoutY="9.0" prefHeight="40.0" prefWidth="82.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="214.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageIcon/iconPlus.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="20.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageIcon/iconMinus.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="204.0" layoutY="4.0" mnemonicParsing="false" onAction="#addButton" prefHeight="46.0" prefWidth="51.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#substractButton" prefHeight="46.0" prefWidth="51.0" styleClass="transparantColor" stylesheets="@../Design.css" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="754.0" layoutY="445.0" mnemonicParsing="false" onAction="#addtoCartButton" styleClass="tealColor" stylesheets="@../Design.css" text="Add to Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkout" layoutX="770.0" layoutY="557.0" mnemonicParsing="false" onAction="#checkOutButton" styleClass="tealColor" stylesheets="@../Design.css" text="Checkout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="155.0" layoutY="664.0" prefWidth="234.0" text="Rp 8,000" textFill="#049372">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="48.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../ImageIcon/arrowRightIcon.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="94.0" layoutY="120.0" prefHeight="59.0" prefWidth="326.0" styleClass="borderButton" stylesheets="@../Design.css" text="600ML Bottle Ecobricks" textFill="#049372">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="118.0" mnemonicParsing="false" onAction="#goBackButton" prefHeight="46.0" prefWidth="58.0" styleClass="transparantColor" stylesheets="@../Design.css" text="Button" textFill="TRANSPARENT" />
+            <Label fx:id="price" alignment="CENTER" contentDisplay="CENTER" layoutX="725.0" layoutY="238.0" prefHeight="47.0" prefWidth="262.0" text="Rp 0">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

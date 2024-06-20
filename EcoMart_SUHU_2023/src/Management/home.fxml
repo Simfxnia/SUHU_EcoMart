@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1520.0" styleClass="whiteColor" stylesheets="@../Design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Management.HomeController">
+   <children>
+      <AnchorPane layoutX="820.0" layoutY="350.0" prefHeight="100.0" prefWidth="584.0" styleClass="tealColor" stylesheets="@../Design.css">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="126.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/dropoffIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="324.0" layoutY="41.0" text="Check Statistics" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#statisticsButton" prefHeight="100.0" prefWidth="584.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="158.0" layoutY="291.0" prefHeight="439.0" prefWidth="515.0" styleClass="greenColor" stylesheets="@../Design.css">
+         <children>
+            <PieChart fx:id="chart" layoutX="10.0" layoutY="43.0" prefHeight="371.0" prefWidth="495.0" />
+            <Label layoutX="76.0" layoutY="24.0" text="All Warehouse Ecobrick Stock" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="820.0" layoutY="283.0" text="Warehouse Information">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="820.0" layoutY="471.0" text="Pending Delivery">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="820.0" layoutY="630.0" prefHeight="100.0" prefWidth="584.0" styleClass="tealColor" stylesheets="@../Design.css">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="112.0" layoutX="45.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/shopIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="345.0" layoutY="41.0" text="Shop Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#shopButton" prefHeight="100.0" prefWidth="584.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="820.0" layoutY="515.0" prefHeight="100.0" prefWidth="584.0" styleClass="greenColor" stylesheets="@../Design.css">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="126.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/pickupIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="318.0" layoutY="41.0" text="Pick Up Deposit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#pickupButton" prefHeight="100.0" prefWidth="584.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="80.0" prefWidth="1540.0">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="80.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="160.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="240.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="320.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="480.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="400.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="560.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="640.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="720.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="800.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="880.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="960.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="1040.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="1120.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="1200.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="1280.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#07c79b" height="125.0" layoutX="1360.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#049372" height="125.0" layoutX="1440.0" layoutY="-25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="559.0" layoutY="121.0" prefHeight="118.0" prefWidth="402.0" text="Warehouse Management" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="warehouse" layoutX="1111.0" layoutY="299.0" prefHeight="35.0" prefWidth="292.0" styleClass="greybuttonColor" stylesheets="@../Design.css" />
+      <Label layoutX="820.0" layoutY="317.0" text="Select a warehouse to check stock">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

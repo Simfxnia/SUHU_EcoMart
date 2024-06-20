@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="800.0" styleClass="whiteColor" stylesheets="@../Design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Welcome.SignInController">
+   <children>
+      <Label layoutX="400.0" layoutY="100.0" prefHeight="54.0" prefWidth="222.0" text="Sign Up" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="400.0" layoutY="339.0" mnemonicParsing="false" onAction="#signInButtonAction" prefHeight="44.0" prefWidth="130.0" styleClass="greenColor" stylesheets="@../Design.css" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="warning" alignment="CENTER" layoutX="400.0" layoutY="310.0" prefHeight="18.0" prefWidth="266.0" textAlignment="CENTER" textFill="RED" />
+      <ImageView fitHeight="244.0" fitWidth="247.0" layoutX="142.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageIcon/loginBottle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="293.0" fitWidth="298.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ImageIcon/loginTurtle.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="14.0" prefHeight="44.0" prefWidth="106.0" text="EcoMart" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="693.0" layoutY="23.0" mnemonicParsing="false" onAction="#goBackLoginPageButtonAction" prefHeight="38.0" prefWidth="78.0" styleClass="transparantColor" stylesheets="@../Design.css" text="Login" textFill="#07c79b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="527.0" layoutY="28.0" prefHeight="28.0" prefWidth="182.0" text="Already have an account?" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="400.0" layoutY="170.0" prefHeight="46.0" prefWidth="358.0" styleClass="loginTextField" stylesheets="@../Design.css">
+         <children>
+            <TextField fx:id="usernameInput" layoutX="51.0" prefHeight="46.0" prefWidth="306.0" promptText="Username" scaleShape="false" styleClass="transparantColor" stylesheets="@../Design.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/loginProfile.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="400.0" layoutY="252.0" prefHeight="49.0" prefWidth="358.0" styleClass="loginTextField" stylesheets="@../Design.css">
+         <children>
+            <PasswordField fx:id="passwordInput" layoutX="50.0" prefHeight="46.0" prefWidth="306.0" promptText="Password" styleClass="transparantColor" stylesheets="@../Design.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="19.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/loginLock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

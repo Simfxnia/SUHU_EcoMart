@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cntrPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="whiteColor" stylesheets="@../Design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <AnchorPane layoutX="50.0" prefHeight="800.0" prefWidth="1350.0">
+         <children>
+            <AnchorPane layoutX="60.0" layoutY="170.0" prefHeight="175.0" prefWidth="322.0" styleClass="greenColor" stylesheets="@../Design.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Your Points" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="58.0" fitWidth="72.0" layoutX="30.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageIcon/pointsIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="points" layoutX="136.0" layoutY="58.0" prefHeight="74.0" prefWidth="176.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="396.0" layoutY="170.0" prefHeight="175.0" prefWidth="340.0" styleClass="tealColor" stylesheets="@../Design.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Equivalent to" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="82.0" fitWidth="86.0" layoutX="30.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageIcon/moneyIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="money" alignment="CENTER" layoutX="112.0" layoutY="58.0" prefHeight="74.0" prefWidth="211.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="825.0" layoutY="313.0" prefHeight="438.0" prefWidth="430.0" styleClass="greenColor" stylesheets="@../Design.css">
+               <children>
+                  <BarChart fx:id="chart" layoutY="53.0" prefHeight="385.0" prefWidth="410.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label layoutX="27.0" layoutY="14.0" text="Your Deposit History" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="48.0" layoutY="40.0" prefHeight="58.0" prefWidth="202.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="825.0" layoutY="170.0" prefHeight="52.0" prefWidth="430.0" styleClass="greenColor" stylesheets="@../Design.css">
+               <children>
+                  <ChoiceBox fx:id="paymet" layoutX="261.0" layoutY="13.0" prefWidth="150.0" styleClass="greenColor" stylesheets="@../Design.css">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ChoiceBox>
+                  <Label layoutX="30.0" layoutY="11.0" text="Designated e-Wallet" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="825.0" layoutY="131.0" prefHeight="35.0" prefWidth="391.0" text="Exchange your points to get your rewards!" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="warning" layoutX="62.0" layoutY="350.0" text="You can exchange your points after it has exceed 1000 points." textFill="#de5d04">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="redeem" layoutX="825.0" layoutY="235.0" mnemonicParsing="false" onAction="#redeemButton" prefHeight="52.0" prefWidth="430.0" styleClass="tealColor" stylesheets="@../Design.css" text="Redeem My Point" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="empty" layoutX="62.0" layoutY="350.0" prefHeight="27.0" prefWidth="672.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="60.0" layoutY="396.0" prefHeight="346.5" prefWidth="672.0">
+               <children>
+                  <MediaView fx:id="mediaView" fitHeight="346.5" fitWidth="672.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="welcome" layoutX="48.0" layoutY="100.0" text="Welcome, ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="975.0" layoutY="30.0" text="EcoMart">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="1186.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageIcon/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
